@@ -66,7 +66,17 @@ public class Methods {
 	public static String substituteAll(String source, char target, String replacement) {
 		String result = "";
 		// TODO: Finish this method
-		
+		for(int i=0;i< source.length();i++)
+		{
+			if(source.charAt(i)==target)
+			{
+				 result= result + replacement ;
+			}
+			else  
+			{
+				result= result+ String.valueOf(source.charAt(i));
+			}
+		}
 		return result;
 	}
 
